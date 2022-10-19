@@ -2,6 +2,21 @@
 
 public class TestingMethods {
 
+    // Method for Sum of all even numbers beteewn 12 and 103//
+
+    public static void SumofEven() {
+        int i;
+        int total = 0;
+        for (i = 13; i <= 103; i += 1) {
+            if (i % 2 == 0) {
+
+                total = total + i;
+            }
+
+        }
+        System.out.println("The total of all even numbers between 13 and 103 is: " + total);
+    }
+
     // Method for Sum of all numbers below 1000//
 
     public static void Sumof1000() {
@@ -62,6 +77,8 @@ public class TestingMethods {
         dynamicMeth.ifstatementage(12);
 
         Sumof1000();
+
+        SumofEven();
     }
 
 }
