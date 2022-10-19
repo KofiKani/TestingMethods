@@ -2,6 +2,19 @@
 
 public class TestingMethods {
 
+    // Method for Sum of all numbers below 1000//
+
+    public static void Sumof1000() {
+        int i = 1;
+        int total = 0;
+        while (i < 1000) {
+            total = total + i;
+            i++;
+        }
+        System.out.println("The total of all numbers below 1000 is: " + total);
+
+    }
+
     // Method to catgorize age group of input using if statmnt//
 
     public void ifstatementage(int age) {
@@ -47,6 +60,8 @@ public class TestingMethods {
         System.out.println("Today is : " + day);
 
         dynamicMeth.ifstatementage(12);
+
+        Sumof1000();
     }
 
 }
