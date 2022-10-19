@@ -2,6 +2,20 @@
 
 public class TestingMethods {
 
+    // Method to catgorize age group of input using if statmnt//
+
+    public void ifstatementage(int age) {
+
+        if (age >= 18) {
+            System.out.println("You are a young adult");
+        } else if (age > 45) {
+            System.out.println("You are an old adult");
+
+        } else {
+            System.out.println("You are a child");
+        }
+    }
+
     // Method for day of the Week//
 
     public String dayoftheWeek(int daynumber) {
@@ -32,6 +46,7 @@ public class TestingMethods {
         String day = dynamicMeth.dayoftheWeek(3);
         System.out.println("Today is : " + day);
 
+        dynamicMeth.ifstatementage(12);
     }
 
 }
